@@ -21,6 +21,10 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json())
 
+app.get('/', (req, res) => {
+    res.send("Hello Its working");
+})
+
 // Get all items
 app.get('/api/items', (req, res) => {
     con.query('SELECT * FROM items', (err, result) => {
