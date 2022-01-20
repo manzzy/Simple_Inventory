@@ -1,0 +1,18 @@
+
+GET http://localhost:4000/api/items
+
+###
+GET http://localhost:4000/api/items/5
+
+###
+POST  http://localhost:4000/api/items
+Content-Type: "application/json";
+
+{
+    "name" : "Gin",
+    "expire_date": "N/A",
+    "quantity": 100,
+    "unit_price": 142.5,
+    "selling_price": 180
+}
+
